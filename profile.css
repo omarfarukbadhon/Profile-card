@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital@1&display=swap');
+
+*{
+    font-family: 'Afacad', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-card{
+    max-width: 370px;
+    width: 100%;
+    border-radius: 25px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.profile-card::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 25px 25px 0 0;
+    height: 36%;
+    width: 100%;
+    background-color: aquamarine;
+}
+
+.image-container{
+    position: relative;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: aquamarine;
+    padding: 3px;
+}
+
+.image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #ffff;
+}
+
+.author-description{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.name{
+    font-weight: 600;
+}
+
+.icon{
+    margin-top: 12px;
+    display: flex;
+}
+
+.link{
+    margin: 0 5px;
+    text-decoration: none;
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    padding: 4px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+}
+
+.buttons{
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.button{
+    color: #ffff;
+    background-color: #4070f4;
+    padding: 3px 15px;
+    border: none;
+    border-radius: 15px;
+}
+
+.details-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.data{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 12px;
+    border-left: 1px solid rgb(207, 207, 207);
+    font-size: 12px;
+}
+
+.number{
+    margin-left: 5px;
+}
+
